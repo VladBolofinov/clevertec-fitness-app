@@ -1,0 +1,55 @@
+.app-usage {
+    padding: 24px 50px 24px 24px;
+    width: 752px;
+    height: 216px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
+    background: var(--character-light-primary-inverse);
+    border-radius: var(--border-radius-default);
+    font-size: var(--font-size-md);
+    line-height: var(--default-line-height);
+    color: var(--primary-light-9);
+    margin: 24px 0 0 24px;
+}
+.app-descr {
+    margin: 24px 0 0 24px;
+    padding: 24px;
+    border-radius: var(--border-radius-default);
+    width: 752px;
+    height: 126px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
+    background: var(--character-light-primary-inverse);
+    font-weight: var(--font-weight-md);
+    font-size: var(--font-size-lg);
+    line-height: var(--default-line-height);
+    color: var(--character-light-title-85);
+}
+@media screen and (min-width: 834px) and (max-width: 1024px) {
+    .app-usage {
+        width: 578px;
+        height: 258px;
+        padding: 24px;
+    }
+    .app-usage.collapsed {
+        width: 722px;
+        height: 216px;
+    }
+    .app-descr {
+        width: 578px;
+    }
+    .app-descr.collapsed {
+        width: 722px;
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 834px) {
+    .app-usage, .app-usage.collapsed {
+        margin: 24px 0 0 16px;
+        padding: 16px;
+        width: 328px;
+        height: 368px;
+    }
+    .app-descr, .app-descr.collapsed {
+        width: 328px;
+        height: 188px;
+        margin: 24px 0 0 16px;
+    }
+}
